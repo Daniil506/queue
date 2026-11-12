@@ -1,14 +1,17 @@
 
 # Visual Studio
 .vs/
+**/.vs/
 *.suo
 *.user
 *.userosscache
 *.sln.docstates
-*.VC.db
-*.VC.VC.opendb
 
-# Build files
+# NuGet
+**/packages/
+*.nupkg
+
+# Build directories
 [Bb]in/
 [Oo]bj/
 [Dd]ebug/
@@ -29,31 +32,25 @@ ipch/
 *.pch
 *.idb
 *.ipch
+*.lib
+*.exp
 *.tlog/
 *.lastbuildstate
-*.lib
+*.recipe
 
-# NuGet
-packages/
-*.nupkg
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Test results
+TestResults/
+*.trx
+*.coverage
 
 # CMake
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 compile_commands.json
-
-# Tests
-TestResults/
-*.trx
-*.coverage
-
-# Temporary files
-*.tmp
-*.log
-*.bak
-*.swp
-.DS_Store
-
-x64/
-packages

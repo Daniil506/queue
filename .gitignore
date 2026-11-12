@@ -54,3 +54,6 @@ TestResults/
 *.bak
 *.swp
 .DS_Store
+
+x64/
+packages
